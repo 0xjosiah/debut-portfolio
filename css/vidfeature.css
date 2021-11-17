@@ -14,7 +14,7 @@ button {
     transition: 200ms ease-in-out;
     border: 2px solid black;
     border-radius: 10px;
-    z-index: 200;
+    z-index: 100;
     background-color: white;
     width: auto;
     max-width: 80%;
@@ -35,7 +35,7 @@ button {
 }
 
 .modal-header .title {
-    font-size: 1.25rem;
+    font-size: 1.25rem;https://picsum.photos/570/250
     font-weight: bold;
 }
 

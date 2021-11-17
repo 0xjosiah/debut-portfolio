@@ -59,4 +59,6 @@ function closeModal(modal) {
 const videos = {
     ctaVideo: 'https://www.youtube.com/embed/lSkiUA6WCAE',
     ctaVideo2: 'https://www.youtube.com/embed/71FDrI4DJfM',
+    testvid: '<iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', 
+    testvid2: '<iframe width="560" height="315" src="https://www.youtube.com/embed/C0DPdy98e4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 }
