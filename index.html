@@ -15,6 +15,9 @@
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/debut-portfolio.webflow.css" rel="stylesheet" type="text/css">
@@ -43,21 +46,21 @@
       <div class="side-scroll-wrapper">
         <section id="Welcome" class="section home">
           <div id="w-node-dae1b55d-d9c7-8485-cf92-35bf43a110c4-9605839a" class="hero-text-wrapper"><img src="images/Logo.svg" loading="eager" alt="Side Scroller Logo" class="ss-logo">
-            <button data-modal-target="#cta-modal">WELCOME</button>
             <h1 class="section-h1">Creating unique experiences for unique brands<span class="period">.</span></h1>
-            <h2 class="section-h2">Websites by <strong>Josiah Webb</strong></h2>
+            <h2 class="section-h2">**Shopify logo** stores by <strong>Josiah Webb</strong></h2>
             <a href="#Contact" data-w-id="Button" class="button w-button">GET IN TOUCH</a>
-              <div class="modal" id="cta-modal">
-                <div class="modal-header">
-                  <div class="title">Exaple Modal</div>
-                  <button data-close-button class="close-button">&times;</button>
-                </div>
-                <div class="modal-body">
-                  <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/71FDrI4DJfM?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+            <div class="modal" id="cta-modal">
+              <div class="modal-header">
+                <div class="title">about me</div>
+                <button data-close-button class="close-button">&times;</button>
               </div>
+              <div class="modal-body">
+                <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/71FDrI4DJfM?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
             <div id="overlay"></div>
           </div><img src="images/urban-line-312.svg" loading="eager" alt="" class="home-hero-image">
+          <button data-modal-target="#cta-modal" class="button w-button welcomeButton">Do you want to know more about me? <br> click here!</button>
         </section>
         <section class="section two">
           <div id="w-node-c398eee0-916a-59fa-9a64-1ef3fe8a30b9-9605839a">
@@ -72,7 +75,7 @@
                   <div class="work-thumbnail-image"><img src="https://picsum.photos/50/50" loading="lazy" alt="" class="work-thumbnail-logo">
                     <div class="work-title">ProjOne</div>
                     <div class="work-summary">
-                      <button data-modal-target="#proj1">View Store Demo</button>
+                      <button data-modal-target="#proj1" class="button w-button">VIEW STORE DEMO</button>
                     </div>
                     <div class="work-thumbnail-overlay">
                       this is where pic goes
@@ -85,7 +88,7 @@
               <div>No items found.</div>
             </div> -->
           </div>
-          <div class="modal" id="proj1">
+          <div class="modal proj1" id="proj1">
             <div class="modal-header">
                 <div class="title">proj1</div>
                 <button data-close-button class="close-button">&times;</button>
@@ -102,7 +105,7 @@
                   <div class="work-thumbnail-image mini"><img src="https://picsum.photos/50/50" alt="" class="work-thumbnail-logo mini">
                     <div class="work-title mini">ProjTwo</div>
                     <div class="work-summary">
-                      
+                      <button data-modal-target="#proj2" class="button w-button">VIEW STORE DEMO</button>
                     </div>
                     <div class="work-thumbnail-overlay">
                       background pic
@@ -115,6 +118,15 @@
               <div>No items found.</div>
             </div> -->
           </div>
+          <div class="modal proj2" id="proj2">
+            <div class="modal-header">
+                <div class="title">proj2</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
           <div id="projThree" class="work-collection-list-wrapper w-dyn-list">
             <!-- w-node-b393e98e-e706-fff9-da80-427cd36bdf5e-9605839a -->
             <div role="list" class="work-collection-list w-dyn-items">
@@ -122,6 +134,9 @@
                 <a href="#" class="work-link w-inline-block">
                   <div class="work-thumbnail-image mini"><img src="https://picsum.photos/50/50" loading="lazy" alt="" class="work-thumbnail-logo mini">
                     <div class="work-title mini">Proj Three</div>
+                    <div class="work-summary">
+                      <button data-modal-target="#proj3" class="button w-button">VIEW STORE DEMO</button>
+                    </div>
                     <div class="work-thumbnail-overlay">eyyyyooooo</div>
                   </div>
                 </a>
@@ -131,6 +146,15 @@
               <div>No items found.</div>
             </div> -->
           </div>
+          <div class="modal proj3" id="proj3">
+            <div class="modal-header">
+                <div class="title">proj3</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
           <div id="projFour" class="work-collection-list-wrapper w-dyn-list">
             <!-- w-node-fd452695-7cd3-0582-c828-0c24e1d41599-9605839a -->
             <div role="list" class="work-collection-list w-dyn-items">
@@ -138,6 +162,9 @@
                 <a href="#" class="work-link w-inline-block">
                   <div class="work-thumbnail-image mini"><img src="https://picsum.photos/50/50" alt="" class="work-thumbnail-logo mini">
                     <div class="work-title mini">proj four</div>
+                    <div class="work-summary">
+                      <button data-modal-target="#proj4" class="button w-button">VIEW STORE DEMO</button>
+                    </div>
                     <div class="work-thumbnail-overlay">biiiiiiitch</div>
                   </div>
                 </a>
@@ -147,6 +174,15 @@
               <div>No items found.</div>
             </div> -->
           </div>
+          <div class="modal proj4" id="proj4">
+            <div class="modal-header">
+                <div class="title">proj4</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
           <div id="projFive" class="work-collection-list-wrapper w-dyn-list">
             <!-- w-node-_3a387b82-4846-51a6-5494-eb5f22a9b7a3-9605839a -->
             <div role="list" class="work-collection-list w-dyn-items">
@@ -154,7 +190,9 @@
                 <a href="#" class="work-link w-inline-block">
                   <div class="work-thumbnail-image"><img src="https://picsum.photos/50/50" alt="" class="work-thumbnail-logo">
                     <div class="work-title">proj five</div>
-                    <div class="work-summary"></div>
+                    <div class="work-summary">
+                        <button data-modal-target="#proj5" class="button w-button">VIEW STORE DEMO</button>
+                    </div>
                     <div class="work-thumbnail-overlay">faaaack off</div>
                   </div>
                 </a>
@@ -163,7 +201,17 @@
             <!-- <div class="w-dyn-empty">
               <div>No items found.</div>
             </div> -->
-          </div><img src="images/Star.svg" alt="" class="work-star-1"><img src="images/Star.svg" alt="" class="work-star-2">
+          </div>
+          <div class="modal proj5" id="proj5">
+            <div class="modal-header">
+                <div class="title">proj5</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <img src="images/Star.svg" alt="" class="work-star-1"><img src="images/Star.svg" alt="" class="work-star-2">
         </section>
         <section class="section services">
           <div class="container">
