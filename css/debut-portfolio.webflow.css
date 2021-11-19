@@ -253,10 +253,10 @@ figcaption {
 }
 
 .section-h2 {
-  margin-top: 0px;
+  margin-top: px;
   margin-bottom: 40px;
-  opacity: 0.6;
-  color: #333230;
+  /* opacity: 0.6; */
+  color: rgba(51, 50, 48, .6);
   font-size: 23px;
   line-height: 1.8;
 }
@@ -303,6 +303,12 @@ figcaption {
 .period {
   font-family: Lato, sans-serif;
   color: #3269ff;
+}
+
+.shopify-logo {
+  height: 3.5em;
+  width: auto;
+  opacity: 1;
 }
 
 .contact-details {
@@ -542,6 +548,9 @@ figcaption {
   -webkit-transition: box-shadow 200ms ease;
   transition: box-shadow 200ms ease;
   text-transform: uppercase;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: .1em;
+  text-shadow: 5px 5px .2rem #1c244580;
 }
 
 .button:hover {
@@ -1313,7 +1322,7 @@ figcaption {
   }
 
   .work-summary {
-    display: none;
+    /* display: none; */
   }
 
   .work-thumbnail-overlay {
