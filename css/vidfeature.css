@@ -12,6 +12,31 @@ button {
     margin-top: 15px;
 }
 
+iframe {
+    width: 53vw;
+    height: 61vh;
+}
+
+.modal {
+    position: fixed;
+    top: 45vh;
+    left: 40vw;
+    /* top: 45vh; this is good for proj vids
+    left: 125vw; */
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    z-index: 102;
+    background-color: rgba(180, 180, 180, 0.65);
+    width: auto;
+    height: auto
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
 .welcomeButton {
   z-index: 100;
   position: absolute;
@@ -84,26 +109,6 @@ button {
 }
 
 
-.modal {
-    position: fixed;
-    top: 45vh;
-    left: 40vw;
-    /* top: 45vh; this is good for proj vids
-    left: 125vw; */
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    /* border: 2px solid black; */
-    border-radius: 10px;
-    z-index: 102;
-    /* background-color: rgba(255, 255, 255, 0.45); */
-    background-image: radial-gradient(black, white);
-    width: auto;
-    max-width: 80%;
-}
-
-.modal.active {
-    transform: translate(-50%, -50%) scale(1);
-}
 
 .proj1 {
     top: 45vh;
@@ -143,6 +148,7 @@ button {
     font-size: 1.25rem;
     font-weight: bold;
     color: #1c2445;
+    text-shadow: 1px 1px .5rem #ffffff;
     font-family: 'Permanent Marker', cursive;
 }
 
@@ -153,16 +159,19 @@ button {
     font-weight: bold;
     font-family: 'Permanent Marker', cursive;
     color: #3269ff;
+    text-shadow: 1px 1px .5rem #ffffff;
     cursor: pointer;
     outline: none;
+    margin: 0;
 }
 
 .modal-body {
-    padding: 10px 30px 30px;
+    padding: 0px 30px 30px;
 }
 
 #overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.65);
+    /* backdrop-filter: blur(3px); */
     /* background-image: radial-gradient(rgba(0, 0, 0, 0.5), white); */
     position: fixed;
     opacity: 0;
@@ -177,7 +186,7 @@ button {
 #overlay.active {
     pointer-events: all;
     opacity: 1;
-    /* z-index: 101; */
+    z-index: 101;
 }
 
 @media screen and (max-width: 991px) {
@@ -198,48 +207,30 @@ button {
     }
 
 @media screen and (max-width: 479px) {
-    .modal {
-        top: 50vh;
-        left: 50vw;
+    iframe {
+        width: 100%;
+        height: calc(100vw * .5);
     }
+    .modal {
+        width: 100%;
+        height: auto;
+        z-index: 102;
+    }
+    
     .welcomeButton {
-        /* z-index: 100; */
-        /* position: absolute; */
+        z-index: 100;
         left: 22%;
         top: 1.5%;
         max-height: 8vh;
         animation: none;
-        /* text-align: center; */
-        /* letter-spacing: 2px; */
         padding: 0px 20px;
-        /* border-radius: 50px; */
-        /* border: 0; */
         box-shadow: 10px 10px .5rem #1c244580;
-        font-family: 'Permanent Marker', cursive;
         text-shadow: 5px 5px .2rem #1c244580;
         font-size: 1rem;
         line-height: 1rem;
     }
     .welcomeButton::after {
-        transform: translatey(0px);
-        animation: float2 5s ease-in-out infinite;
         content: none;
-        line-height: 0;
-        font-weight: bold;
-        -webkit-text-fill-color: #3269ff;
-        text-shadow: 17px 17px .4rem #1c244580;
-        font-size: 0;
-        width: 0;
-        height: 0;
-        border-radius: 15px;
-        background-color: #3269ff;
-        position: absolute;
-        display: block;
-        bottom: 0;
-        left: 50%;
-        box-shadow: 20px 20px .5rem #1c244580;
-        z-index: 100;
-        font-family: initial;
     }
 }
 /* 991 - 1440 > need to fix cta button */
