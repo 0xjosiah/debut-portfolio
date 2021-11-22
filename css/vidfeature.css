@@ -192,20 +192,26 @@ button {
     }
     .welcomeButton {
         right: 20%;
-      }
-      .welcomeButton::after {
+    }
+    .welcomeButton::after {
         left: 15%;
         text-align: left;
-      }
     }
+}
 
 @media screen and (max-width: 767px) {
+    iframe {
+        width: 100%;
+    }
+    .modal {
+        max-width: 90%;
+        width: 560px;
+    }
     .welcomeButton {
         animation: none;
         right: 10%;
         padding: 15px;
     }
-
     .welcomeButton::after {
         animation: none;
         bottom: -25px;
@@ -216,16 +222,15 @@ button {
 }
 
 @media screen and (max-width: 479px) {
-    iframe {
-        width: 100%;
-        height: calc(100vw * .5);
-    }
     .modal {
         width: 100%;
+        max-width: 100%;
         height: auto;
         z-index: 102;
     }
-    
+    .modal-body {
+        padding: 0px 0px 30px;
+    }
     .welcomeButton {
         z-index: 100;
         left: 22%;
