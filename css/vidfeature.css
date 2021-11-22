@@ -12,17 +12,10 @@ button {
     margin-top: 15px;
 }
 
-iframe {
-    width: 53vw;
-    height: 61vh;
-}
-
 .modal {
     position: fixed;
     top: 45vh;
     left: 40vw;
-    /* top: 45vh; this is good for proj vids
-    left: 125vw; */
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     border-radius: 10px;
@@ -42,15 +35,14 @@ iframe {
   position: absolute;
   left: auto;
   top: auto;
-  right: 10%;
-  bottom: 70%;
+  right: 5%;
+  bottom: 70%   ;
   animation: float 5s ease-in-out infinite;
   text-align: center;
   letter-spacing: 2px;
   padding: 40px;
   border-radius: 80px;
   box-shadow: 20px 20px .5rem #1c244580;
-  /* font-family: 'Permanent Marker', cursive; */
   text-shadow: 5px 5px .2rem #1c244580;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -64,7 +56,6 @@ iframe {
   font-weight: bold;
   -webkit-text-fill-color: #3269ff;
   text-shadow: 17px 17px .4rem #1c244580;
-  /* text-align: center; */
   font-size: 150px;
   width: 110px;
   height: 25px;
@@ -108,8 +99,6 @@ iframe {
   }
 }
 
-
-
 .proj1 {
     top: 45vh;
     left: 117.35vw;
@@ -140,8 +129,6 @@ iframe {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-bottom: 2px solid black; */
-
 }
 
 .modal-header .title {
@@ -171,8 +158,6 @@ iframe {
 
 #overlay {
     background-color: rgba(0, 0, 0, 0.65);
-    /* backdrop-filter: blur(3px); */
-    /* background-image: radial-gradient(rgba(0, 0, 0, 0.5), white); */
     position: fixed;
     opacity: 0;
     top: 0;
@@ -189,22 +174,46 @@ iframe {
     z-index: 101;
 }
 
+@media screen and (max-width: 1280px) {
+    .welcomeButton {
+        left: auto;
+        top: auto;
+        right: 2%;
+        bottom: calc(100vw / 2.2);
+        padding: 20px;
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .modal {
         top: 50vh;
         left: 50vw;
-
     }
     .welcomeButton {
-        right: 10%;
-        bottom: 40%;
-        padding: 40px;
+        right: 20%;
       }
       .welcomeButton::after {
         left: 15%;
         text-align: left;
       }
     }
+
+@media screen and (max-width: 767px) {
+    .welcomeButton {
+        animation: none;
+        right: 10%;
+        padding: 15px;
+    }
+
+    .welcomeButton::after {
+        animation: none;
+        bottom: -25px;
+        line-height: 15px;
+        font-size: 105px;
+        height: 17px;
+    }
+}
 
 @media screen and (max-width: 479px) {
     iframe {
@@ -220,18 +229,17 @@ iframe {
     .welcomeButton {
         z-index: 100;
         left: 22%;
-        top: 1.5%;
+        top: 2%;
+        right: 30px;
         max-height: 8vh;
         animation: none;
         padding: 0px 20px;
         box-shadow: 10px 10px .5rem #1c244580;
         text-shadow: 5px 5px .2rem #1c244580;
-        font-size: 1rem;
         line-height: 1rem;
+        margin-top: 0;
     }
     .welcomeButton::after {
         content: none;
     }
 }
-/* 991 - 1440 > need to fix cta button */
-/* 767 - 991 > need to have cta button have uniform behavior */
