@@ -22,7 +22,7 @@ button {
     z-index: 102;
     background-color: rgba(180, 180, 180, 0.65);
     width: auto;
-    height: auto
+    height: auto;
     max-width: 80%;
 }
 
