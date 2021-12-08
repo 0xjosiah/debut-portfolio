@@ -99,6 +99,22 @@ button {
   }
 }
 
+.one {
+    background-image: url('../../images/fresh_fits_screenshot.png');
+}
+.ptwo {
+    background-image: url('https://picsum.photos/250/250');
+}
+.three {
+    background-image: url('https://picsum.photos/251/251');
+}
+.four {
+    background-image: url('https://picsum.photos/252/252');
+}
+.five {
+    background-image: url('https://picsum.photos/1500/1250');
+}
+
 .proj1 {
     top: 45vh;
     left: 117.35vw;

@@ -384,7 +384,7 @@ figcaption {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-image: url('https://picsum.photos/1500/1250');
+  /* background-image: url('https://picsum.photos/1500/1250'); */
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
